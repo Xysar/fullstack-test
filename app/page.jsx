@@ -1,7 +1,7 @@
 import Image from "next/image";
 import prisma from "../lib/prisma";
 import Feed from "./components/Feed";
-import { useEffect } from "react";
+
 
 async function getFeed() {
   const feed = await prisma.post.findMany({
