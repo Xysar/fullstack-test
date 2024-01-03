@@ -1,6 +1,6 @@
 import Image from "next/image";
 import prisma from "../lib/prisma";
-
+import { getServerSession } from "next-auth/next"
 import Post from "./components/Post";
 
 async function getFeed() {
